@@ -1,0 +1,83 @@
+.member-creation {
+
+  &-image {
+    @extend .bg-cover;
+
+    &__inner {
+      min-height: calc(100vh);
+      padding: 60px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &-form {
+    padding: 35px 35px 65px;
+    background-color: white;
+
+    &__inner {
+      margin: 0 auto;
+      max-width: 320px;
+
+      &--wide {
+        max-width: 400px;
+        padding: 25px 25px 0;
+      }
+    }
+
+    &__bottom {
+      text-align: center;
+      font-size: 14px;
+
+      a {
+        color: $blue;
+        transition: 0.3s;
+
+        &:hover {
+          color: $blue-dark;
+        }
+      }
+    }
+
+    .button {
+      margin-top: 30px;
+    }
+  }
+
+  .tree-route {
+    padding-top: 50px;
+  }
+}
+
+.members-tree {
+  .members-item {
+    border-radius: 7px;
+    color: $members-item-color;
+    border: 1px solid $members-item-border;
+    width: auto;
+    display: flex;
+    gap: 90px;
+    padding: 3px 10px;
+    background-color: $members-item-background;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .tree-node {
+    display: inline-flex;
+  }
+
+  .member-icon {
+    -webkit-appearance: none;
+    font-size: 12px;
+    border: none;
+    padding-left: 16px;
+    padding-right: 10px;
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-image: url('../images/icons/user.svg');
+  }
+}
+
+

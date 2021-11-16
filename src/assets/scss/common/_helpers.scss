@@ -1,0 +1,22 @@
+.remove-outline {
+  outline: none!important;
+
+  &:hover, &:focus, &:active {
+    outline: none !important;
+  }
+}
+
+.bg {
+  &-cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.small {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+

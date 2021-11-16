@@ -1,0 +1,31 @@
+.heading {
+
+  &-decorated {
+    text-align: center;
+    position: relative;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: calc(50% - 40px);
+      width: 80px;
+      height: 1px;
+      background-color: $grey;
+    }
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    &--left {
+      text-align: left;
+
+      &:before {
+        left: 0;
+      }
+    }
+  }
+}
